@@ -1,50 +1,96 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>DHC BIM Solutions — Inicio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHC BIM Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1a237e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-height: 80px;
+        }
+        nav {
+            background: #0d47a1;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            background-color: #1a237e;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html"><img src="assets/img/logo.jpg" alt="DHC BIM Solutions logo" class="logo"></a>
-    <nav class="main-nav">
-      <a href="index.html">Inicio</a>
-      <a href="about.html">Nosotros</a>
-      <a href="services.html">Servicios</a>
-      <a href="projects.html">Proyectos</a>
-      <a href="contact.html">Contacto</a>
-    </nav>
-  </div>
+<header>
+    <img src="logo.png" alt="DHC BIM Solutions">
+    <h1>DHC BIM Solutions</h1>
+    <p>Empresa peruana especializada en soluciones BIM para proyectos de ingeniería y arquitectura</p>
 </header>
 
+<nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
 
-<main class="container">
-  <section class="hero">
-    <h1>DHC BIM Solutions</h1>
-    <p class="lead">Modelado y Gestión Digital de Proyectos — soluciones BIM técnicas y corporativas.</p>
-    <p><a class="btn" href="contact.html">Solicitar Presupuesto</a></p>
-  </section>
+<section id="servicios">
+    <h2>Servicios</h2>
+    <p>Ofrecemos modelado BIM, coordinación interdisciplinaria, gestión de información y asesoría técnica para optimizar tus proyectos.</p>
+</section>
 
-  <section class="intro">
-    <h2>Nuestros Servicios</h2>
-    <div class="grid">
-      <article class="card"><h3>Modelado BIM 3D</h3><p>Modelos paramétricos precisos para todas las especialidades.</p></article>
-      <article class="card"><h3>Coordinación BIM</h3><p>Clash detection y resolución de interferencias.</p></article>
-      <article class="card"><h3>Gestión 4D/5D</h3><p>Planificación temporal y control de costos integrados.</p></article>
-    </div>
-  </section>
+<section id="proyectos">
+    <h2>Proyectos</h2>
+    <p>Hemos trabajado en proyectos de hospitales, edificios comerciales, infraestructura pública y más.</p>
+</section>
 
-</main>
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Teléfono:</strong> 986 464 081</p>
+    <p><strong>Email:</strong> fernando.hinostroza.BIM@gmail.com</p>
+    <form action="https://formspree.io/f/xvgqdrpy" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" name="nombre" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" required><br><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea name="mensaje" rows="5" required></textarea><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
 
-
-<footer class="site-footer">
-  <div class="container">
-    <p>© 2025 DHC BIM Solutions — Modelado y Gestión Digital de Proyectos</p>
-  </div>
+<footer>
+    <p>&copy; 2025 DHC BIM Solutions - Todos los derechos reservados</p>
 </footer>
 
 </body>

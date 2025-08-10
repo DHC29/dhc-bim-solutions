@@ -1,0 +1,1 @@
+Por favor, sube tu logo JPG como 'logo.jpg' en esta carpeta (assets/img/logo.jpg).

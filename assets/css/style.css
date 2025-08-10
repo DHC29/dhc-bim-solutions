@@ -1,0 +1,47 @@
+
+/* Simple corporate / technical style */
+:root{
+  --blue:#0d47a1;
+  --blue-2:#1565c0;
+  --gray:#6b7280;
+  --max-width:1100px;
+}
+
+*{box-sizing:border-box}
+body{font-family: 'Arial', sans-serif; margin:0; color:#222; background:#f4f6f8; line-height:1.6}
+.container{max-width:var(--max-width); margin:0 auto; padding:20px}
+
+.site-header{background:var(--blue); color:#fff; position:sticky; top:0; z-index:30}
+.header-inner{display:flex; align-items:center; justify-content:space-between; padding:12px 20px}
+.logo{height:56px; display:block}
+.main-nav a{color:white; text-decoration:none; margin-left:18px; font-weight:600}
+.main-nav a:hover{text-decoration:underline}
+
+/* Hero */
+.hero{padding:60px 20px; text-align:left; background:linear-gradient(90deg, rgba(13,71,161,0.06), rgba(21,101,192,0.02)); border-radius:6px}
+.hero h1{font-size:2.2rem; margin:0 0 10px; color:var(--blue)}
+.lead{color:var(--gray); margin-bottom:18px}
+
+/* Grid */
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin-top:18px}
+.card{background:white; padding:18px; border-radius:8px; box-shadow:0 6px 18px rgba(13,71,161,0.06); border:1px solid #e6edf8}
+
+/* Sections */
+h2{color:var(--blue); margin-top:0}
+.service{margin-bottom:12px}
+
+/* Contact form */
+.contact-form{max-width:680px; margin:18px auto 0; display:flex; flex-direction:column}
+.contact-form input, .contact-form textarea{padding:12px; margin-top:8px; border-radius:6px; border:1px solid #d1d9e6}
+.contact-form button{margin-top:12px; background:var(--blue); color:white; padding:12px; border:none; border-radius:6px; font-weight:700; cursor:pointer}
+.contact-form button:hover{background:var(--blue-2)}
+
+/* Footer */
+.site-footer{padding:18px 20px; text-align:center; background:var(--blue); color:white; margin-top:28px;}
+
+/* Responsive tweaks */
+@media (max-width:800px){
+  .header-inner{flex-direction:column; gap:10px}
+  .main-nav a{margin-left:8px}
+  .hero{text-align:center}
+}
